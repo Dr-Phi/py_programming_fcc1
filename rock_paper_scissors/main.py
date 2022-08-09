@@ -1,5 +1,11 @@
 import random
 
+def main():
+  input("Welcome to my first RPS game.\npress Enter")
+  choices = get_choices()
+  result = check_win(choices["player"], choices["computer"])
+
+
 def get_choices(): # Function with no parameters
   options = ["rock", "paper", "scissors"]
   player_choice = input("Write your choice (rock, paper, scissors): ")
@@ -31,6 +37,7 @@ def check_win(player, computer): # Function with 2 parameters
   else:
     print("Write a valid choice")
 
-input("Welcome to my first RPS game.\npress Enter")
 
-check_win("rock", "rock")
+if __name__ == "__main__":
+  main()
+  
