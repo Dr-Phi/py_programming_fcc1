@@ -40,4 +40,3 @@ def check_win(player, computer): # Function with 2 parameters
 
 if __name__ == "__main__":
   main()
-  
